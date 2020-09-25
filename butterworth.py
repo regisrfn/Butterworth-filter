@@ -21,22 +21,19 @@ plt.axvline(Fn, color='green')  # cutoff frequency
 plt.legend(loc='upper right')
 plt.show()
 
-
-K = b[0]/a[2]
 Wc_square = a[2]
 Wc = np.sqrt(a[2])
-C1 = 1E-9
-C2 = 1E-9
-R2 = 10e3
-R1 = (-R2*C2)/(C1-a[1]*C1*R2*C2)
+Q = Wc/a[1]
+K = 3.0 - 1/Q
+C = 1E-9
+R = 1/(Wc*C)
 R3 = 10E3
 R4 = R3*(K-1)
-Q = np.sqrt(R1*R2*C1*C2)/(R1*C1+R2*C2+R1*C1*(1-K))
 
-print(f'R1 = {R1}')
-print(f'R2 = {R2}')
-print(f'C1 = {C1}')
-print(f'C2 = {C2}')
+print(f'R1 = {R}')
+print(f'R3 = {R3}')
+print(f'R4 = {R4}')
+print(f'C2 = {C}')
 print(f'Wc = {Wc}')
 print(f'Q = {Q}')
 print(f'K = {K}')
