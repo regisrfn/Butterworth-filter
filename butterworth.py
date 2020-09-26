@@ -1,7 +1,6 @@
 from scipy import signal
 import matplotlib.pyplot as plt
 import numpy as np
-import sympy
 
 Fn = 22e3
 fc = 2*np.pi*Fn
@@ -37,3 +36,4 @@ print(f'C2 = {C}')
 print(f'Wc = {Wc}')
 print(f'Q = {Q}')
 print(f'K = {K}')
+print(f'Eq = {a}')
