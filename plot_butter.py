@@ -5,7 +5,7 @@ import sympy
 
 Fn = 22e3
 fc = 2*np.pi*Fn
-ordem = [2, 3, 4, 5, 6, 7, 8]
+ordem = np.arange(2,10,)
 
 for N in ordem:
     b, a = signal.butter(N, fc, 'low', analog=True)
