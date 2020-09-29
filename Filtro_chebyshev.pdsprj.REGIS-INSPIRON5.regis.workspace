@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
-  <PLACEMENT>2c0000000000000003000000fffffffffffffffffcffffff050000000501000035000000930400008d020000</PLACEMENT>
+  <PLACEMENT>2c0000000000000003000000fffffffffffffffffcffffff05000000dfffffff050000006e040000f4020000</PLACEMENT>
   <WINDOW type="default" module="ISIS"/>
  </FRAME>
  <MODULE name="VSMDEBUG">
@@ -16,18 +16,14 @@
    </POPUP>
    <POPUP w="350" x="80" flags="00000032" y="149" h="200" pid="1" iid="-1">
     <PROPERTIES>
-     <ITEM name="Address Column Width">85</ITEM>
      <ITEM name="AutoResize">No</ITEM>
      <ITEM name="Gridlines">Yes</ITEM>
-     <ITEM name="Name Column Width">85</ITEM>
      <ITEM name="ShowAddresses">Yes</ITEM>
      <ITEM name="ShowPreviousValues">No</ITEM>
      <ITEM name="ShowTypes">No</ITEM>
      <ITEM name="ShowWatchPoint">Yes</ITEM>
      <ITEM name="TriggerMode">0</ITEM>
-     <ITEM name="Value Column Width">85</ITEM>
      <ITEM name="Version">100</ITEM>
-     <ITEM name="Watch Expression Column Width">85</ITEM>
      <ITEM name="nItems">0</ITEM>
     </PROPERTIES>
    </POPUP>

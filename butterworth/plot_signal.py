@@ -5,7 +5,7 @@ import pandas as pd
 
 # Importing the dataset
 
-dataset = pd.read_csv('./filtro.csv')
+dataset = pd.read_csv('./csv_files/filtro.csv')
 time = dataset.iloc[:, 0].values
 vent = dataset.iloc[:, 1].values
 vout = dataset.iloc[:, 2].values
