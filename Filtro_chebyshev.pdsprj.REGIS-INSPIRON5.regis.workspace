@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
-  <PLACEMENT>2c0000000000000003000000fffffffffffffffffcffffff05000000dfffffff050000006e040000f4020000</PLACEMENT>
+  <PLACEMENT>2c0000000000000003000000fffffffffffffffffcffffff05000000b905000009010000480a0000f8030000</PLACEMENT>
   <WINDOW type="default" module="ISIS"/>
+  <WINDOW binding="0" type="GRAPH" module="ISIS"/>
+  <WINDOW binding="1" type="GRAPH" module="ISIS"/>
  </FRAME>
  <MODULE name="VSMDEBUG">
   <PWI>
