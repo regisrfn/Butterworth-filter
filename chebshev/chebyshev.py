@@ -8,7 +8,7 @@ ordem = 8
 rp = 0.5
 
 z, p, k = signal.cheby1(ordem, rp, fc, 'low', analog=True, output='zpk')
-Av = np.power(10, rp/20)  # normalizando ganho devido ao ripple
+Av = np.power(10, rp/20)  #ganho devido ao ripple
 
 R3 = 10E3  # resistor de ganho
 RB = 10e3  # resistor constante para normalização do ganho
