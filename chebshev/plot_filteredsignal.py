@@ -2,10 +2,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
+
+def getParent(path, levels=1):
+    for i in range(levels + 1):
+        parent = os.path.dirname(path)
+        path = parent
+    return os.path.abspath(path)
+file = getParent(__file__)
 
 # Importing the dataset
-
-dataset = pd.read_csv('../csv_files/filtro_cheby.csv')
+dataset = pd.read_csv(f'{file}/csv_files/filtro_cheby.csv')
 time = dataset.iloc[:, 0].values
 vout = dataset.iloc[:, 1].values
 vent = dataset.iloc[:, 2].values
