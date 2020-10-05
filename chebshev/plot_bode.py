@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 def getParent(path, levels=1):
-    for i in range(levels + 1):
+    for i in range(levels + 1): #pylint: disable=unused-variable
         parent = os.path.dirname(path)
         path = parent
     return os.path.abspath(path)
