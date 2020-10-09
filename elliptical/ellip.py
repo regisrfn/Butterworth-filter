@@ -4,7 +4,7 @@ import numpy as np
 
 Fn = 22e3
 fc = 2*np.pi*Fn
-ordem = 2
+ordem = 6
 rp = 0.5
 rs = 33
 z, p, k = signal.ellip(ordem, rp, rs, fc, 'low', analog=True, output='zpk')
@@ -28,8 +28,8 @@ for N in range(int(ordem/2)):
     K = 3.0 - 1/Q  # ganho por estagio
     R = 1/(Wc*C)
     R4 = R3*(K-1)
-    adj = a[2]/b[2]
-    Av = K*Av*adj  # ganho total
+    K0 = a[2]/b[2]
+    Av = K*Av*K0  # ganho total
     Av2 = K*Av2  # ganho total
     RB = RF*Av  # resistor para normalização do ganho
     RB2 = RF*Av2  # resistor para normalização do ganho
@@ -47,7 +47,7 @@ for N in range(int(ordem/2)):
     Av = 1.0
     Av2 = 1.0
 
-print(f'Equação geral = {k}{transfer_func_zeros,transfer_func_polos}')
+print(f'Equação geral = {k:e}{transfer_func_zeros,transfer_func_polos}')
 
 w, h = signal.freqs(k*transfer_func_zeros, transfer_func_polos)
 plt.semilogx(w/(2*np.pi), 20 * np.log10(abs(h)), label=f'Ordem = {ordem}')
